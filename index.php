@@ -1,10 +1,7 @@
 <?php
 
-require __DIR__ . '/Models/Category.php';
-require __DIR__ . '/Models/Product.php';
-require __DIR__ . '/Models/Accessory.php';
-require __DIR__ . '/Models/Food.php';
-require __DIR__ . '/Models/Toy.php';
+require __DIR__ . '/database/db.php';
+
 
 // $bone = new Toy(new Category('Cani', ), 94502, 'Osso', 'Ossi ossa', 2, true, );
 
@@ -12,7 +9,7 @@ require __DIR__ . '/Models/Toy.php';
 
 include __DIR__ . '/Views/layout/head.php';
 include __DIR__ . '/Views/layout/header.php';
-include __DIR__ . '/Views/partials/movie.php';
+include __DIR__ . '/Views/layout/main.php';
 include __DIR__ . '/Views/layout/footer.php';
 ?>
 
