@@ -19,10 +19,21 @@ $foods = [
 
 ];
 
+$accessories = [
+    new Accessory(new Category('Dog'), 1202, 'Cuccia', 'All For Pets', 320, false, "https://shop-cdn-m.mediazs.com/bilder/cuccia/per/cani/spike/classic/1/400/icon_topseller_1_56__1.jpg", 'Wood', 'big' ),
+    new Accessory(new Category('Car'), 1702, 'Cuccia tiragraffi', 'All For Pets', 120, true, "https://media.mediazs.com/bilder/5/140/115905_pla_modern_living_kb_amora_fg_4024_5.jpg", 'Wood tessuto', 'medium' ),
+
+];
+
 
 $toys[0]->setImg("https://shop-cdn-m.mediazs.com/bilder/nylabone/dental/osso/gioco/per/cuccioli/9/400/186512_pla_interpet_nylabone_welpen_dental_kauknochen_1stck_hs_02_9.jpg");
 $toys[1]->setImg("https://shop-cdn-m.mediazs.com/bilder/colonna/tiragraffi/olga/8/400/6_top_seller_1000x1000_8.jpg");
 
+$foods[0]->setImg("https://shop-cdn-m.mediazs.com/bilder/bosch/hpc/light/7/400/70122_pla_bosch_light_12_5kg_7.jpg");
+$foods[1]->setImg("https://shop-cdn-m.mediazs.com/bilder/cosma/nature/x/g/alimento/umido/per/gatti/4/400/60833_pla_cosma_nature_tunashrimps_70g_4.jpg");
+
+$accessories[0]->setImg("https://shop-cdn-m.mediazs.com/bilder/cuccia/per/cani/spike/classic/1/400/icon_topseller_1_56__1.jpg");
+$accessories[1]->setImg("https://media.mediazs.com/bilder/5/140/115905_pla_modern_living_kb_amora_fg_4024_5.jpg");
 
 
 
