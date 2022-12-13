@@ -61,11 +61,10 @@ class product{
     }
 
     public function getFinalPrice(){
-        if($this->discount === 0){
-            return $this->price;
-        }
 
-        return $this->price *= (1- ($this->discount/100));
+        $final_price = $this->price *= (1- ($this->discount/100));
+
+        return number_format($final_price,2,',','.');
     }
 
 }
