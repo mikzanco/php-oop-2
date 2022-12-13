@@ -42,11 +42,12 @@
             <div class="card  m-2" style="width: 18rem;">
                 <img src="<?php echo $acc->img ?>" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"><strong><?php echo $acc->name ?></strong></h5>
+                    
+                    <h5 class="card-title"><strong><?php echo $acc->name  ?></strong></h5>
                     <p class="card-text"><strong>Nome marca: </strong><?php echo $acc->brand ?></p>
-                    <p class="card-text"><strong>Disponibule: </strong><?php echo $acc->isAvaiable ? 'Disponibile' : 'Esaurito' ?></p>
-                    <p class="card-text"><strong>Dimesnioni: </strong><?php echo $acc->size ?></p>
-                    <p class="card-text"><strong>Matriali: </strong><?php echo $acc->material ?></p>
+                    <p class="card-text"><strong>Disponibile: </strong><?php echo $acc->isAvaiable ? 'Disponibile' : 'Esaurito' ?></p>
+                    <p class="card-text"><strong>Dimensioni: </strong><?php echo $acc->size ?></p>
+                    <p class="card-text"><strong>Materiali: </strong><?php echo $acc->material ?></p>
                     
 
                 </div>

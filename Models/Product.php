@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/Category.php';
 class product{
 
     public $category;
@@ -9,7 +10,15 @@ class product{
     public $price;
     public $isAvaibale;
     public $img;
-
+    /**
+     *  @var Array $category
+     *  @var Float $id
+     *  @var String $name
+     *  @var String $brand
+     *  @var String $img
+     *  @var Bool $isAvaiable
+     *  @var Float $price
+     */
     public function __construct(Category $_category, $_id, $_name, $_brand, $_price, $_isAvaiable)
     {
         $this->category = $_category;
