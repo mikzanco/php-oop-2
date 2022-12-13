@@ -10,6 +10,7 @@ class product{
     public $price;
     public $isAvaibale;
     public $img;
+    protected $discount = 0;
     /**
      *  @var Array $category
      *  @var Float $id
@@ -42,6 +43,29 @@ class product{
             return $this->img;
         }
         return $placeholder;
+    }
+
+    // CREO LA FUNZIONE PER EVENTUALE SCONTO
+
+    public function setDiscount(Int $_discount){
+        if($_discount < 1 && $_discount > 99){
+            $this->discount = 0;
+
+        }else{
+            $this->discount = $_discount;
+        }
+    }
+
+    public function getDiscount(){
+        return $this->discount;
+    }
+
+    public function getFinalPrice(){
+        if($this->discount === 0){
+            return $this->price;
+        }
+
+        return $this->price *= (1- ($this->discount/100));
     }
 
 }
